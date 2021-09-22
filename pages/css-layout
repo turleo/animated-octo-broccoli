@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>О языке CSS</title>
+    </head>
+    <body>
+        <article>
+            <section>
+                
+                <h1>О языке <span style="color: violet;">CSS</span></h1>
+            </section>
+            <menu>
+                <ul>
+                    <li>
+                        <a href="../">Главная страница</a>
+                    </li>
+                    <li>
+                        <a href="html_layout.html">HTML layout</a>
+                    </li>
+                    <li>
+                        <a href="js_layout.html">JavaScript layout</a>
+                    </li>
+                </ul>
+            </menu>
+        </article>
+    </body>
+</html>
