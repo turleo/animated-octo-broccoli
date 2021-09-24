@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 20px;
+}
+
+#classmates {
+    color: black;
+}
+
+.hidden {
+    opacity: .1;
+    width: 120px;
+    position: absolute;
+    left: 300px;
+    font-size: 50px;
+    margin-top: -10px;
+}
+
+@media (min-height: 900px) {
+    footer {
+        position: absolute;
+        bottom: 10px;
+        font-size: 20px;
+    }
+}
+
+.emoji_links {
+    text-decoration: none;
+    font-size: 20px;
+}
