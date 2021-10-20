@@ -2,27 +2,91 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>О языке CSS</title>
+        <title>О языке HTML</title>
+        <link rel="stylesheet" href="/styles/css-layout.css">
     </head>
     <body>
-        <article>
-            <section>
-                
-                <h1>О языке <span style="color: violet;">CSS</span></h1>
-            </section>
-            <menu>
-                <ul>
-                    <li>
-                        <a href="../">Главная страница</a>
-                    </li>
-                    <li>
-                        <a href="html-layout.html">HTML layout</a>
-                    </li>
-                    <li>
-                        <a href="js-layout.html">JavaScript layout</a>
-                    </li>
-                </ul>
-            </menu>
-        </article>
+        <table border="1px" width="100%">
+            <tr>
+                <td rowspan="2" width="10%" class="css">CSS</td>
+                <td rowspan="2" width="80%" class="title">CSS Layout</td>
+                <td height="50px">Логин</td>
+            </tr>
+                <td height="50px">Пароль</td>
+            <tr>
+                <td colspan="3" height="40px">
+                    Навигация
+                </td>
+            </tr>
+        </table>
+
+        <table border="1px" width="100%">
+            <tr>
+                <td rowspan="2" width="200">
+                    <ul>
+                        <li>
+                            <a href="../">Главная страница</a>
+                        </li>
+                        <li>
+                            <a href="css-layout.html">CSS layout</a>
+                        </li>
+                        <li>
+                            <a href="js-layout.html">JavaScript layout</a>
+                        </li>
+                    </ul>
+                </td>
+                <td>
+                    <p>
+                        CSS - это язык оформления HTML-документов. За более подробной информацией <a href="https://ru.wikipedia.org/wiki/CSS">сюда</a>. 
+                        Так как он является вспомогательным языком, то сущестует несколько основных способов его добавления на web-страницу:
+                    </p>
+
+                    <ul>
+                        <li>
+                            Внешний 
+                            <span class="monospace">&#60;link rel="stylesheet" href="style.css"&#62;</span>
+                        </li>
+                        <li>
+                            Внутренний глобальный 
+                            <span class="monospace">&#60;style&#62;&#60;/style&#62;</span>
+                        </li>
+                        <li>
+                            Внутренний локальный 
+                            <span class="monospace">&#60;span style="color: red"&#62;&#60;/span&#62;</span>
+                        </li>
+                    </ul>
+
+                    <p>
+                        Синтаксис языка выглядит следующим образом: сначала указывается изменяемый элемент с помощью <span class="important">селектора</span>, 
+                        после этого в фигурных скобках перечисляются через точку с запятой изменяемые свойства элемента (<span class="important">цвет, 
+                        размер, расположение и т.д.</span>), затем напротив каждого свойства указывается значение (<span class="important">red, left, 1px и т.д.</span>). Например:
+                    </p>
+                    <pre>
+<span style="color: darkorange;">table</span>  {
+    <span class="name">width</span>: <span class="value">80%</span>;
+    <span class="name">border-color</span>: <span class="value">white</span>;
+    <span class="name">border-style</span>: <span class="value">groove</span>;
+    <span class="name">border-width</span>: <span class="value">5px</span>;
+}
+                    </pre>
+                    
+                    <p>
+                        В ситуации когда изменить необходимо только некоторые элементы, следует пользоваться указателями класса: 
+                        когда одни и теже теги принадлежат разным классам и оформляются по разному.
+                        <br>
+                    </p>
+                    <pre>
+<span class="name">&#60;table</span> class="header"<span class="name">&#62;&#60;/table&#62;</span>
+<span class="name">&#60;table</span> class="main"<span class="name">&#62;&#60;/table&#62;</span>
+</pre>
+                </td>
+            </tr>
+            <tr>
+                <td>Подвал</td>
+            </tr>
+        </table>
+        <footer>
+            <p>Я считаю, что получилось <s>не</s>плохо</p>
+        </footer>
     </body>
 </html>
