@@ -1,0 +1,49 @@
+body {
+    font-family: sans-serif;
+    background: linear-gradient(to left, lightcyan, honeydew);
+    height: 98vh;
+}
+
+.monospace {
+    font-family: monospace;
+    margin-left: 1%;
+}
+
+.important {
+    font-weight: bold;
+    color: maroon;
+    font-size: 20px;
+}
+
+pre {
+    margin-left: 5%;
+}
+
+.name {
+    color: blue;
+}
+
+.value {
+    color: brown;
+}
+
+.css {
+    font-size: 90px;
+}
+
+.title {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+footer, td {
+    border: solid 1px;
+}
+footer, table {
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+p {
+    margin-left: 10px;
+}
