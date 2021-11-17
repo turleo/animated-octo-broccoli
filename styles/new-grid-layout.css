@@ -1,0 +1,18 @@
+header {
+    display: grid;
+    grid-template-columns: repeat(5, 200px);
+    grid-template-rows: 200px 70px 100px 200px;
+}
+
+.text {
+    border: solid;
+    margin: 5px;
+}
+
+.big-text {
+    grid-column: 1 / 3;
+}
+
+.small-text {
+    grid-column: -3 / -1;
+}
